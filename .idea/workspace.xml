@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f8a0660-26fc-432f-b356-c10794b7ca70" name="Default Changelist" comment="" />
+    <list default="true" id="8f8a0660-26fc-432f-b356-c10794b7ca70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,12 +196,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593502431792</updated>
-      <workItem from="1593502434759" duration="96682000" />
+      <workItem from="1593502434759" duration="97189000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1593692871429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593692871430</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2355" y="182" key="#Illuminated_Cloud" timestamp="1593502482798">
@@ -209,10 +224,10 @@
       <screen x="0" y="23" width="1536" height="898" />
     </state>
     <state x="873" y="219" key="#xdebugger.evaluate/0.23.1536.898@0.23.1536.898" timestamp="1593527789888" />
-    <state x="2361" y="135" key="CommitChangelistDialog2" timestamp="1593692735497">
+    <state x="2361" y="135" key="CommitChangelistDialog2" timestamp="1593692871234">
       <screen x="1792" y="23" width="1920" height="1057" />
     </state>
-    <state x="2361" y="135" key="CommitChangelistDialog2/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593692735497" />
+    <state x="2361" y="135" key="CommitChangelistDialog2/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593692871234" />
     <state width="1536" height="438" key="DebuggerActiveHint" timestamp="1593527177549">
       <screen x="0" y="23" width="1536" height="898" />
     </state>
@@ -273,6 +288,10 @@
       <screen x="1792" y="23" width="1920" height="1057" />
     </state>
     <state x="2262" y="190" key="SettingsEditor/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593508276415" />
+    <state x="2353" y="272" key="Vcs.Push.Dialog.v2" timestamp="1593692972909">
+      <screen x="1792" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2353" y="272" key="Vcs.Push.Dialog.v2/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593692972909" />
     <state width="768" height="449" key="XDebugger.FullValuePopup" timestamp="1593527565276">
       <screen x="0" y="23" width="1536" height="898" />
     </state>

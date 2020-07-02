@@ -12,4 +12,19 @@
 
 ## 示例
 
-![image](https://raw.githubusercontent.com/siyecao/image-folder/master/images/file_watchers.png)
+![image](https://github.com/afterimagex/PlateGen/blob/master/examples/single_plate.jpg)
+
+单行车牌
+
+![image](https://github.com/afterimagex/PlateGen/blob/master/examples/double_plate.jpg)
+
+多行
+
+![image](https://github.com/afterimagex/PlateGen/blob/master/examples/shuffle_plate.jpg)
+
+混乱（训练）
+
+## TODO
+
++ Gan 增加真实性
++ blender ?
