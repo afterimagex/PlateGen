@@ -38,30 +38,45 @@ class SingleBlackPlate(SinglePlate):
         osp.join(resource_dir, 'template/single_black1.bmp'),
         osp.join(resource_dir, 'template/single_black2.bmp'),
     ]
+    _CATEGORY = 'single_black'
 
 
 class SingleBlackPlateShi(SingleBlackPlate):
+    '''使、领馆汽车号牌：黑底白字白框线'''
     _REGULAR = SingleBlackPlate._REGULAR[:-1] + [
         (['white'], ['使']),
     ]
+    _CATEGORY = 'single_black_shi'
 
 
 class SingleBlackPlateLing(SingleBlackPlate):
+    '''使、领馆汽车号牌：黑底白字白框线'''
     _REGULAR = SingleBlackPlate._REGULAR[:-1] + [
         (['white'], ['领']),
     ]
+    _CATEGORY = 'single_black_ling'
 
 
 class SingleBlackPlateGang(SingleBlackPlate):
+    '''
+    港澳入出境车号牌：
+    黑底白字白框线，白“港”、“澳”字，白框线。港澳地区入出内地的汽车。
+    '''
     _REGULAR = SingleBlackPlate._REGULAR[:-1] + [
         (['white'], ['港']),
     ]
+    _CATEGORY = 'single_black_gang'
 
 
 class SingleBlackPlateAo(SingleBlackPlate):
+    '''
+    港澳入出境车号牌：
+    黑底白字白框线，白“港”、“澳”字，白框线。港澳地区入出内地的汽车。
+    '''
     _REGULAR = SingleBlackPlate._REGULAR[:-1] + [
         (['white'], ['澳']),
     ]
+    _CATEGORY = 'single_black_ao'
 
 
 if __name__ == '__main__':
@@ -69,6 +84,7 @@ if __name__ == '__main__':
 
     sbp = SingleBlackPlateAo(300)
 
-    for (img, txt) in sbp:
+    for (img, txt, cls) in sbp:
+        print(txt, cls)
         cv2.imshow('1', img)
         cv2.waitKey(0)

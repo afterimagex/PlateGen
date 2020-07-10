@@ -27,6 +27,7 @@ class Plate:
     _REGULAR = []
     _BG_FILES = []
     _FG_GENERATOR = None
+    _CATEGORY = None
 
     def __init__(self, height=140):
         super().__init__()
@@ -55,13 +56,13 @@ class Plate:
 
     def __next__(self):
         while True:
-            bg = self.get_random_background()
-            text = []
+            image = self.get_random_background()
+            label = []
             for i, rect in enumerate(self.layouts):
                 txt, img = self.get_random_foreground(self._REGULAR[i], (rect[2], rect[3]))
-                bg = overlay_image(img, bg, rect)
-                text.append(txt)
-            return bg, text
+                image = overlay_image(img, image, rect)
+                label.append(txt)
+            return image, label, self._CATEGORY
 
 
 class SinglePlate(Plate):
@@ -126,8 +127,8 @@ class RandomPlateCompose(object):
     def __next__(self):
         while True:
             gen = np.random.choice(self._genlist)
-            img, txt = next(gen)
-            return img, txt
+            img, txt, cls = next(gen)
+            return img, txt, cls
 
     def __iadd__(self, other):
         self._genlist += other._genlist

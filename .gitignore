@@ -7,4 +7,4 @@
 *.pkl
 *_local*
 __pycache__/
-.idea/
+*/.idea/

@@ -41,9 +41,13 @@ class SingleBluePlate(SinglePlate):
         osp.join(resource_dir, 'template/single_blue1.bmp'),
         osp.join(resource_dir, 'template/single_blue2.bmp'),
     ]
+    _CATEGORY = 'single_blue'
 
 
 class DoubleBluePlate(DoublePlate):
+    '''
+    unknow
+    '''
     _REGULAR = [
         (['white'], cs.CHINESE_BASE),
         (['white'], cs.LETTERS),
@@ -58,11 +62,13 @@ class DoubleBluePlate(DoublePlate):
         osp.join(resource_dir, 'template/single_blue1.bmp'),
         osp.join(resource_dir, 'template/single_blue2.bmp'),
     ]
+    _CATEGORY = 'double_blue'
 
 
 if __name__ == '__main__':
     sbp = SingleBluePlate(300)
 
-    for (img, txt) in sbp:
+    for (img, txt, cls) in sbp:
+        print(txt, cls)
         cv2.imshow('1', img)
         cv2.waitKey(0)

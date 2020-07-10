@@ -36,9 +36,13 @@ class SingleWhitePlateJing(SinglePlate):
     _REGULAR = SinglePlate._REGULAR[:-1] + [
         (['red'], ['警']),
     ]
+    _CATEGORY = 'single_white_jing'
 
 
-class DoubleWhitePlate(DoublePlate):
+class DoubleWhitePlateJing(DoublePlate):
+    '''
+    警用摩托车号牌白底黑字，红“警”字黑框线摩托车类警车。
+    '''
     _FG_GENERATOR = CharsGenerator()
     _BG_FILES = [
         osp.join(resource_dir, 'template/double_white2.bmp'),
@@ -47,10 +51,11 @@ class DoubleWhitePlate(DoublePlate):
     _REGULAR = SinglePlate._REGULAR[:-1] + [
         (['red'], ['警']),
     ]
+    _CATEGORY = 'double_white_jing'
 
 
 if __name__ == '__main__':
-    sbp = DoubleBluePlate(300)
+    sbp = DoubleWhitePlateJing(300)
     for (img, txt) in sbp:
         cv2.imshow('1', img)
         cv2.waitKey(0)

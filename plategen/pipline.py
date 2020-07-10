@@ -55,13 +55,14 @@ def plate_generator_pipline(pg, num_proc=10):
 
 if __name__ == '__main__':
     import cv2
-    from plategen.plate.shuffle import SingleRandomPlate
+    from plategen.plate.shuffle import ShuffleDoubleBlue
 
-    srp = SingleRandomPlate(174)
+    srp = ShuffleDoubleBlue(174)
     ds = plate_generator_pipline(srp)
     ds.reset_state()
 
-    for (img, txt) in ds:
+    for (img, txt, cls) in ds:
+        print(cls)
         print(txt)
         print(img.shape)
         cv2.imshow('demo', img)

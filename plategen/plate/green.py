@@ -43,6 +43,7 @@ class SingleGreenPlateA(SinglePlate):
     _BG_FILES = [
         osp.join(resource_dir, 'template/green_bg_2.png')
     ]
+    _CATEGORY = 'single_green_a'
 
 
 class SingleGreenPlateB(SingleGreenPlateA):
@@ -54,13 +55,14 @@ class SingleGreenPlateB(SingleGreenPlateA):
     _BG_FILES = [
         osp.join(resource_dir, 'template/green_bg_1.png')
     ]
+    _CATEGORY = 'single_green_b'
 
 
 if __name__ == '__main__':
     import cv2
 
-    sbp = SingleGreenPlateA(300)
+    sbp = SingleGreenPlateB(300)
 
-    for (txt, img) in sbp:
+    for (img, txt, cls) in sbp:
         cv2.imshow('1', img)
         cv2.waitKey(0)

@@ -21,6 +21,5 @@ from .black import (
 )
 from .blue import SingleBluePlate, DoubleBluePlate
 from .green import SingleGreenPlateA, SingleGreenPlateB
-from .white import DoubleWhitePlate, SingleWhitePlateJing
+from .white import DoubleWhitePlateJing, SingleWhitePlateJing
 from .yellow import DoubleYellowPlate, SingleYellowPlateXue, SingleYellowPlate
-
