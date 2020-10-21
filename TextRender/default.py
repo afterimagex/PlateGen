@@ -22,7 +22,7 @@ from plategen.plate import (
 )
 from plategen.plate import SingleBluePlate
 from plategen.plate import SingleGreenPlateA, SingleGreenPlateB
-from plategen.plate import SingleWhitePlateJing, DoubleWhitePlate
+from plategen.plate import SingleWhitePlateJing
 from plategen.plate import SingleYellowPlate, SingleYellowPlateXue, DoubleYellowPlate
 
 from plategen.plate.shuffle import (
@@ -31,7 +31,8 @@ from plategen.plate.shuffle import (
     ShuffleWhite,
     ShuffleBlue,
     ShuffleYellow,
-    ShuffleDoubleBlueYellow,
+    ShuffleDoubleBlue,
+    ShuffleDoubleYellow,
     ShuffleDoubleBlack,
     ShuffleDoubleWhite,
 )
@@ -50,10 +51,9 @@ def normal_random_plate_generator():
         SingleYellowPlate(140),
         SingleYellowPlateXue(140),
         SingleWhitePlateJing(140),
-        DoubleWhitePlate(220),
         DoubleYellowPlate(220),
     ])
-    ds = plate_generator_pipline(pg)
+    ds = plate_generator_pipline(pg, (128, 64))
     ds.reset_state()
 
     return ds
@@ -66,7 +66,8 @@ def shuffle_plate_generator():
         ShuffleWhite(140),
         ShuffleYellow(140),
         ShuffleBlue(140),
-        ShuffleDoubleBlueYellow(220),
+        ShuffleDoubleBlue(220),
+        ShuffleDoubleYellow(220),
         ShuffleDoubleBlack(220),
         ShuffleDoubleWhite(220)
     ])
@@ -83,8 +84,9 @@ def mixed_plate_generator():
         ShuffleWhite(140),
         ShuffleYellow(140),
         ShuffleBlue(140),
-        ShuffleDoubleBlueYellow(220),
+        ShuffleDoubleBlue(220),
         ShuffleDoubleBlack(220),
+        ShuffleDoubleYellow(220),
         ShuffleDoubleWhite(220),
         SingleBluePlate(140),
         SingleGreenPlateA(140),
@@ -97,9 +99,24 @@ def mixed_plate_generator():
         SingleYellowPlate(140),
         SingleYellowPlateXue(140),
         SingleWhitePlateJing(140),
-        DoubleWhitePlate(220),
+
         DoubleYellowPlate(220),
     ])
     ds = plate_generator_pipline(pg)
     ds.reset_state()
     return ds
+
+
+if __name__ == '__main__':
+    import cv2
+
+    ds = normal_random_plate_generator()
+
+    for (img, txt, cls) in ds:
+        print(cls)
+        print(txt)
+        print(len(img))
+        print(img[0].shape)
+
+        cv2.imshow('demo', img[0])
+        cv2.waitKey(0)

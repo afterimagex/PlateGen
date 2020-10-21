@@ -17,7 +17,7 @@ from plategen.default import mixed_plate_generator
 
 def gen_normal_plate():
     ds = mixed_plate_generator()
-    for (img, txt) in ds:
+    for (img, txt, cls) in ds:
         print(txt)
         print(img.shape)
         cv2.imshow('demo', img)

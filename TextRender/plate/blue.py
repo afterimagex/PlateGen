@@ -14,10 +14,10 @@ import os.path as osp
 
 import cv2
 
-from plategen import charsets as cs
-from plategen.imgen import CharsGenerator
-from plategen.plate import SinglePlate, DoublePlate
-from plategen.resource import resource_dir
+from TextRender import charsets as cs
+from TextRender.imgen import CharsGenerator
+from TextRender.plate import SinglePlate, DoublePlate
+from TextRender.resource import resource_dir
 
 
 class SingleBluePlate(SinglePlate):

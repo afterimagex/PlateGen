@@ -2,18 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f8a0660-26fc-432f-b356-c10794b7ca70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextRender/textline/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TextRender/transform.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plategen/charsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/plategen/charsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plategen/pipline.py" beforeDir="false" afterPath="$PROJECT_DIR$/plategen/pipline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plategen/plate/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/plategen/plate/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plategen/plate/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/plategen/plate/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plategen/plate/black.py" beforeDir="false" afterPath="$PROJECT_DIR$/plategen/plate/black.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plategen/plate/blue.py" beforeDir="false" afterPath="$PROJECT_DIR$/plategen/plate/blue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plategen/plate/green.py" beforeDir="false" afterPath="$PROJECT_DIR$/plategen/plate/green.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plategen/plate/shuffle.py" beforeDir="false" afterPath="$PROJECT_DIR$/plategen/plate/shuffle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plategen/plate/white.py" beforeDir="false" afterPath="$PROJECT_DIR$/plategen/plate/white.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plategen/plate/yellow.py" beforeDir="false" afterPath="$PROJECT_DIR$/plategen/plate/yellow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/charsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/charsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/default.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/default.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/imgen.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/imgen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/pipline.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/pipline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/plate/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/plate/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/plate/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/plate/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/plate/black.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/plate/black.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/plate/blue.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/plate/blue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/plate/green.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/plate/green.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/plate/shuffle.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/plate/shuffle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/plate/white.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/plate/white.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/plate/yellow.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/plate/yellow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/fonts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/fonts/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/fonts/eng_92.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/fonts/eng_92.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/fonts/zh_cn_92.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/fonts/zh_cn_92.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne000.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne000.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne001.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne001.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne002.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne002.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne003.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne003.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne004.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne004.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne005.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne005.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne006.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne006.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne007.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne007.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne008.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne008.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne009.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne009.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne010.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne010.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne011.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne011.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne012.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne012.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne013.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne013.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne014.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne014.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne015.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne015.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne016.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne016.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne017.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne017.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne018.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne018.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne019.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne019.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne020.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne020.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne021.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne021.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne022.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne022.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne023.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne023.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne024.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne024.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne025.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne025.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne026.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne026.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne027.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne027.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne028.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne028.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne029.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne029.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne030.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne030.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne100.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne101.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne101.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne102.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne102.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne103.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne103.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne104.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne104.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne105.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne105.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne106.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne106.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne107.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne107.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne108.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne108.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne109.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne109.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne110.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne110.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne111.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne111.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne112.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne112.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne113.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne113.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne114.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne114.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne115.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne115.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne116.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne116.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne117.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne117.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne118.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne118.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne119.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne119.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne120.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne120.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne121.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne121.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne122.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne122.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne123.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne123.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne124.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne124.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne125.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne125.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne126.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne126.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne127.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne127.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne128.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne128.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne129.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne129.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne130.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne130.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne131.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne131.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne132.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne132.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/new/ne133.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/new/ne133.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/raw/chinese1_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/raw/chinese1_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/raw/chinese1_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/raw/chinese1_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/raw/chinese1_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/raw/chinese1_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/raw/chinese3.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/raw/chinese3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/raw/letters1_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/raw/letters1_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/raw/letters1_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/raw/letters1_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/raw/letters3.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/raw/letters3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/smu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/smu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/smu2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/smu2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/army1.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/army1.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/army2.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/army2.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/double_white1.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/double_white1.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/double_white2.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/double_white2.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/double_yellow1.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/double_yellow1.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/double_yellow2.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/double_yellow2.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/green_bg_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/green_bg_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/green_bg_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/green_bg_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/police1.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/police1.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/police2.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/police2.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/single_black1.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/single_black1.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/single_black2.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/single_black2.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/single_blue1.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/single_blue1.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/single_blue2.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/single_blue2.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/single_blue3.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/single_blue3.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/single_blue4.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/single_blue4.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/single_white1.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/single_white1.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/single_white2.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/single_white2.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/single_yellow1.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/single_yellow1.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/resource/template/single_yellow2.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/resource/template/single_yellow2.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/scripts/make_raw.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/scripts/make_raw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/textline/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/transform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plategen/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextRender/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +155,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/plategen/resource" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TextRender/resource/words" />
     <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TextRender/resource/words" />
+      <recent name="$PROJECT_DIR$/TextRender/textline" />
       <recent name="$PROJECT_DIR$/plategen/resource" />
       <recent name="$PROJECT_DIR$/plategen/resource/template" />
     </key>
@@ -63,8 +173,8 @@
       <recent name="$PROJECT_DIR$/plategen/resource/template/blue" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pipline">
-    <configuration name="black" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.base (1)">
+    <configuration name="base (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PlateGen" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,12 +182,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plategen/plate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TextRender/textline" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plategen/plate/black.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TextRender/textline/base.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +196,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="blue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="charsets" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PlateGen" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,12 +204,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plategen/plate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TextRender" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plategen/plate/blue.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TextRender/charsets.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,7 +218,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="generate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="fonts_utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PlateGen" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,34 +226,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TextRender" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="green" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PlateGen" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plategen/plate" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plategen/plate/green.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TextRender/fonts_utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,13 +262,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="words" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PlateGen" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TextRender/textline" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TextRender/textline/words.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.base (1)" />
+        <item itemvalue="Python.fonts_utils" />
+        <item itemvalue="Python.charsets" />
+        <item itemvalue="Python.words" />
         <item itemvalue="Python.pipline" />
-        <item itemvalue="Python.blue" />
-        <item itemvalue="Python.black" />
-        <item itemvalue="Python.green" />
-        <item itemvalue="Python.generate" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +316,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593502431792</updated>
-      <workItem from="1593502434759" duration="115031000" />
+      <workItem from="1593502434759" duration="166162000" />
+      <workItem from="1603245696203" duration="1046000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1593692871429</created>
@@ -222,118 +333,147 @@
       <option name="project" value="LOCAL" />
       <updated>1593693191006</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="一些小的改动，增加类别返回">
+      <created>1594363286333</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594363286333</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="change README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="change README.md" />
+    <MESSAGE value="一些小的改动，增加类别返回" />
+    <option name="LAST_COMMIT_MESSAGE" value="一些小的改动，增加类别返回" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2355" y="182" key="#Illuminated_Cloud" timestamp="1593502482798">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1920" height="496" key="DebuggerActiveHint" timestamp="1594705835903">
+      <screen x="1792" y="23" width="1920" height="1014" />
     </state>
-    <state x="2355" y="182" key="#Illuminated_Cloud/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593502482798" />
-    <state x="873" y="219" key="#xdebugger.evaluate" timestamp="1593527789888">
-      <screen x="0" y="23" width="1536" height="898" />
+    <state width="1920" height="496" key="DebuggerActiveHint/1792.23.1920.1014/0.23.1792.1097@1792.23.1920.1014" timestamp="1594705835903" />
+    <state x="100" y="123" width="1336" height="701" key="DiffContextDialog" timestamp="1603245762625">
+      <screen x="0" y="23" width="1536" height="901" />
     </state>
-    <state x="873" y="219" key="#xdebugger.evaluate/0.23.1536.898@0.23.1536.898" timestamp="1593527789888" />
-    <state x="2361" y="135" key="CommitChangelistDialog2" timestamp="1594363213010">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state x="100" y="123" width="1336" height="701" key="DiffContextDialog/0.23.1536.901@0.23.1536.901" timestamp="1603245762625" />
+    <state width="1494" height="200" key="GridCell.Tab.0.bottom" timestamp="1603246728364">
+      <screen x="0" y="23" width="1536" height="899" />
     </state>
-    <state x="2361" y="135" key="CommitChangelistDialog2/1792.23.1920.1057/0.23.1792.1054@1792.23.1920.1057" timestamp="1594363213010" />
-    <state x="2361" y="135" key="CommitChangelistDialog2/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593693190818" />
-    <state width="1920" height="497" key="DebuggerActiveHint" timestamp="1594116106334">
-      <screen x="1792" y="23" width="1920" height="1018" />
+    <state width="1494" height="234" key="GridCell.Tab.0.bottom/0.0.1536.960@0.0.1536.960" timestamp="1594651555023" />
+    <state width="1878" height="314" key="GridCell.Tab.0.bottom/0.23.1536.894@0.23.1536.894" timestamp="1595249095770" />
+    <state width="1494" height="200" key="GridCell.Tab.0.bottom/0.23.1536.899@0.23.1536.899" timestamp="1603246728364" />
+    <state width="1494" height="201" key="GridCell.Tab.0.bottom/0.23.1536.901@0.23.1536.901" timestamp="1603245923109" />
+    <state width="1750" height="190" key="GridCell.Tab.0.bottom/1792.23.1920.1014/0.23.1792.1097@0.23.1792.1097" timestamp="1594716680302" />
+    <state width="1750" height="190" key="GridCell.Tab.0.bottom/1792.23.1920.1014/0.23.1792.1097@1792.23.1920.1014" timestamp="1594716389739" />
+    <state width="1750" height="190" key="GridCell.Tab.0.bottom/1792.23.1920.1015/0.23.1792.1097@0.23.1792.1097" timestamp="1594716480375" />
+    <state width="1878" height="190" key="GridCell.Tab.0.bottom/1792.23.1920.1015/0.23.1792.1097@1792.23.1920.1015" timestamp="1594714928661" />
+    <state width="1878" height="190" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1055@1792.23.1920.1057" timestamp="1594702966470" />
+    <state width="1878" height="234" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1056@1792.23.1920.1057" timestamp="1594693449079" />
+    <state width="1494" height="200" key="GridCell.Tab.0.center" timestamp="1603246728363">
+      <screen x="0" y="23" width="1536" height="899" />
     </state>
-    <state width="1536" height="438" key="DebuggerActiveHint/0.23.1536.898@0.23.1536.898" timestamp="1593527177549" />
-    <state width="1920" height="497" key="DebuggerActiveHint/1792.23.1920.1018/0.23.1792.1097@1792.23.1920.1018" timestamp="1594116106334" />
-    <state width="1878" height="314" key="GridCell.Tab.0.bottom" timestamp="1594363035017">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1494" height="234" key="GridCell.Tab.0.center/0.0.1536.960@0.0.1536.960" timestamp="1594651555023" />
+    <state width="1878" height="314" key="GridCell.Tab.0.center/0.23.1536.894@0.23.1536.894" timestamp="1595249095769" />
+    <state width="1494" height="200" key="GridCell.Tab.0.center/0.23.1536.899@0.23.1536.899" timestamp="1603246728363" />
+    <state width="1494" height="201" key="GridCell.Tab.0.center/0.23.1536.901@0.23.1536.901" timestamp="1603245923108" />
+    <state width="1750" height="190" key="GridCell.Tab.0.center/1792.23.1920.1014/0.23.1792.1097@0.23.1792.1097" timestamp="1594716680302" />
+    <state width="1750" height="190" key="GridCell.Tab.0.center/1792.23.1920.1014/0.23.1792.1097@1792.23.1920.1014" timestamp="1594716389738" />
+    <state width="1750" height="190" key="GridCell.Tab.0.center/1792.23.1920.1015/0.23.1792.1097@0.23.1792.1097" timestamp="1594716480374" />
+    <state width="1878" height="190" key="GridCell.Tab.0.center/1792.23.1920.1015/0.23.1792.1097@1792.23.1920.1015" timestamp="1594714928660" />
+    <state width="1878" height="190" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1055@1792.23.1920.1057" timestamp="1594702966470" />
+    <state width="1878" height="234" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1056@1792.23.1920.1057" timestamp="1594693449078" />
+    <state width="1494" height="200" key="GridCell.Tab.0.left" timestamp="1603246728363">
+      <screen x="0" y="23" width="1536" height="899" />
     </state>
-    <state width="1494" height="303" key="GridCell.Tab.0.bottom/0.0.1536.960@0.0.1536.960" timestamp="1593619408492" />
-    <state width="1494" height="303" key="GridCell.Tab.0.bottom/0.23.1536.898@0.23.1536.898" timestamp="1593608747685" />
-    <state width="1878" height="275" key="GridCell.Tab.0.bottom/1792.23.1920.1018/0.23.1792.1097@1792.23.1920.1018" timestamp="1594116229249" />
-    <state width="1878" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1054@1792.23.1920.1057" timestamp="1594363035017" />
-    <state width="1878" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1055@1792.23.1920.1057" timestamp="1594286842137" />
-    <state width="1878" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593745728242" />
-    <state width="1878" height="314" key="GridCell.Tab.0.center" timestamp="1594363035016">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1494" height="234" key="GridCell.Tab.0.left/0.0.1536.960@0.0.1536.960" timestamp="1594651555022" />
+    <state width="1878" height="314" key="GridCell.Tab.0.left/0.23.1536.894@0.23.1536.894" timestamp="1595249095769" />
+    <state width="1494" height="200" key="GridCell.Tab.0.left/0.23.1536.899@0.23.1536.899" timestamp="1603246728363" />
+    <state width="1494" height="201" key="GridCell.Tab.0.left/0.23.1536.901@0.23.1536.901" timestamp="1603245923108" />
+    <state width="1750" height="190" key="GridCell.Tab.0.left/1792.23.1920.1014/0.23.1792.1097@0.23.1792.1097" timestamp="1594716680301" />
+    <state width="1750" height="190" key="GridCell.Tab.0.left/1792.23.1920.1014/0.23.1792.1097@1792.23.1920.1014" timestamp="1594716389738" />
+    <state width="1750" height="190" key="GridCell.Tab.0.left/1792.23.1920.1015/0.23.1792.1097@0.23.1792.1097" timestamp="1594716480374" />
+    <state width="1878" height="190" key="GridCell.Tab.0.left/1792.23.1920.1015/0.23.1792.1097@1792.23.1920.1015" timestamp="1594714928660" />
+    <state width="1878" height="190" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1055@1792.23.1920.1057" timestamp="1594702966469" />
+    <state width="1878" height="234" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1056@1792.23.1920.1057" timestamp="1594693449078" />
+    <state width="1494" height="200" key="GridCell.Tab.0.right" timestamp="1603246728364">
+      <screen x="0" y="23" width="1536" height="899" />
     </state>
-    <state width="1494" height="303" key="GridCell.Tab.0.center/0.0.1536.960@0.0.1536.960" timestamp="1593619408492" />
-    <state width="1494" height="303" key="GridCell.Tab.0.center/0.23.1536.898@0.23.1536.898" timestamp="1593608747684" />
-    <state width="1878" height="275" key="GridCell.Tab.0.center/1792.23.1920.1018/0.23.1792.1097@1792.23.1920.1018" timestamp="1594116229248" />
-    <state width="1878" height="314" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1054@1792.23.1920.1057" timestamp="1594363035016" />
-    <state width="1878" height="314" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1055@1792.23.1920.1057" timestamp="1594286842137" />
-    <state width="1878" height="314" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593745728241" />
-    <state width="1878" height="314" key="GridCell.Tab.0.left" timestamp="1594363035016">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1494" height="234" key="GridCell.Tab.0.right/0.0.1536.960@0.0.1536.960" timestamp="1594651555023" />
+    <state width="1878" height="314" key="GridCell.Tab.0.right/0.23.1536.894@0.23.1536.894" timestamp="1595249095769" />
+    <state width="1494" height="200" key="GridCell.Tab.0.right/0.23.1536.899@0.23.1536.899" timestamp="1603246728364" />
+    <state width="1494" height="201" key="GridCell.Tab.0.right/0.23.1536.901@0.23.1536.901" timestamp="1603245923109" />
+    <state width="1750" height="190" key="GridCell.Tab.0.right/1792.23.1920.1014/0.23.1792.1097@0.23.1792.1097" timestamp="1594716680302" />
+    <state width="1750" height="190" key="GridCell.Tab.0.right/1792.23.1920.1014/0.23.1792.1097@1792.23.1920.1014" timestamp="1594716389739" />
+    <state width="1750" height="190" key="GridCell.Tab.0.right/1792.23.1920.1015/0.23.1792.1097@0.23.1792.1097" timestamp="1594716480374" />
+    <state width="1878" height="190" key="GridCell.Tab.0.right/1792.23.1920.1015/0.23.1792.1097@1792.23.1920.1015" timestamp="1594714928661" />
+    <state width="1878" height="190" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1055@1792.23.1920.1057" timestamp="1594702966470" />
+    <state width="1878" height="234" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1056@1792.23.1920.1057" timestamp="1594693449079" />
+    <state width="1494" height="200" key="GridCell.Tab.1.bottom" timestamp="1603246728365">
+      <screen x="0" y="23" width="1536" height="899" />
     </state>
-    <state width="1494" height="303" key="GridCell.Tab.0.left/0.0.1536.960@0.0.1536.960" timestamp="1593619408492" />
-    <state width="1494" height="303" key="GridCell.Tab.0.left/0.23.1536.898@0.23.1536.898" timestamp="1593608747683" />
-    <state width="1878" height="275" key="GridCell.Tab.0.left/1792.23.1920.1018/0.23.1792.1097@1792.23.1920.1018" timestamp="1594116229248" />
-    <state width="1878" height="314" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1054@1792.23.1920.1057" timestamp="1594363035016" />
-    <state width="1878" height="314" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1055@1792.23.1920.1057" timestamp="1594286842136" />
-    <state width="1878" height="314" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593745728240" />
-    <state width="1878" height="314" key="GridCell.Tab.0.right" timestamp="1594363035017">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1494" height="234" key="GridCell.Tab.1.bottom/0.0.1536.960@0.0.1536.960" timestamp="1594651555334" />
+    <state width="1878" height="234" key="GridCell.Tab.1.bottom/0.23.1536.894@0.23.1536.894" timestamp="1595249095765" />
+    <state width="1494" height="200" key="GridCell.Tab.1.bottom/0.23.1536.899@0.23.1536.899" timestamp="1603246728365" />
+    <state width="1494" height="201" key="GridCell.Tab.1.bottom/0.23.1536.901@0.23.1536.901" timestamp="1603245929416" />
+    <state width="1878" height="234" key="GridCell.Tab.1.bottom/1792.23.1920.1014/0.23.1792.1097@1792.23.1920.1014" timestamp="1594714754100" />
+    <state width="1878" height="234" key="GridCell.Tab.1.bottom/1792.23.1920.1057/0.23.1792.1056@1792.23.1920.1057" timestamp="1594693449080" />
+    <state width="1494" height="200" key="GridCell.Tab.1.center" timestamp="1603246728365">
+      <screen x="0" y="23" width="1536" height="899" />
     </state>
-    <state width="1494" height="303" key="GridCell.Tab.0.right/0.0.1536.960@0.0.1536.960" timestamp="1593619408492" />
-    <state width="1494" height="303" key="GridCell.Tab.0.right/0.23.1536.898@0.23.1536.898" timestamp="1593608747685" />
-    <state width="1878" height="275" key="GridCell.Tab.0.right/1792.23.1920.1018/0.23.1792.1097@1792.23.1920.1018" timestamp="1594116229249" />
-    <state width="1878" height="314" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1054@1792.23.1920.1057" timestamp="1594363035017" />
-    <state width="1878" height="314" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1055@1792.23.1920.1057" timestamp="1594286842137" />
-    <state width="1878" height="314" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593745728241" />
-    <state width="1878" height="275" key="GridCell.Tab.1.bottom" timestamp="1594116229251">
-      <screen x="1792" y="23" width="1920" height="1018" />
+    <state width="1494" height="234" key="GridCell.Tab.1.center/0.0.1536.960@0.0.1536.960" timestamp="1594651555333" />
+    <state width="1878" height="234" key="GridCell.Tab.1.center/0.23.1536.894@0.23.1536.894" timestamp="1595249095765" />
+    <state width="1494" height="200" key="GridCell.Tab.1.center/0.23.1536.899@0.23.1536.899" timestamp="1603246728365" />
+    <state width="1494" height="201" key="GridCell.Tab.1.center/0.23.1536.901@0.23.1536.901" timestamp="1603245929416" />
+    <state width="1878" height="234" key="GridCell.Tab.1.center/1792.23.1920.1014/0.23.1792.1097@1792.23.1920.1014" timestamp="1594714754099" />
+    <state width="1878" height="234" key="GridCell.Tab.1.center/1792.23.1920.1057/0.23.1792.1056@1792.23.1920.1057" timestamp="1594693449079" />
+    <state width="1494" height="200" key="GridCell.Tab.1.left" timestamp="1603246728364">
+      <screen x="0" y="23" width="1536" height="899" />
     </state>
-    <state width="1494" height="293" key="GridCell.Tab.1.bottom/0.23.1536.898@0.23.1536.898" timestamp="1593534086843" />
-    <state width="1878" height="275" key="GridCell.Tab.1.bottom/1792.23.1920.1018/0.23.1792.1097@1792.23.1920.1018" timestamp="1594116229251" />
-    <state width="1878" height="275" key="GridCell.Tab.1.bottom/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593744138520" />
-    <state width="1878" height="275" key="GridCell.Tab.1.center" timestamp="1594116229250">
-      <screen x="1792" y="23" width="1920" height="1018" />
+    <state width="1494" height="234" key="GridCell.Tab.1.left/0.0.1536.960@0.0.1536.960" timestamp="1594651555332" />
+    <state width="1878" height="234" key="GridCell.Tab.1.left/0.23.1536.894@0.23.1536.894" timestamp="1595249095764" />
+    <state width="1494" height="200" key="GridCell.Tab.1.left/0.23.1536.899@0.23.1536.899" timestamp="1603246728364" />
+    <state width="1494" height="201" key="GridCell.Tab.1.left/0.23.1536.901@0.23.1536.901" timestamp="1603245929415" />
+    <state width="1878" height="234" key="GridCell.Tab.1.left/1792.23.1920.1014/0.23.1792.1097@1792.23.1920.1014" timestamp="1594714754099" />
+    <state width="1878" height="234" key="GridCell.Tab.1.left/1792.23.1920.1057/0.23.1792.1056@1792.23.1920.1057" timestamp="1594693449079" />
+    <state width="1494" height="200" key="GridCell.Tab.1.right" timestamp="1603246728365">
+      <screen x="0" y="23" width="1536" height="899" />
     </state>
-    <state width="1494" height="293" key="GridCell.Tab.1.center/0.23.1536.898@0.23.1536.898" timestamp="1593534086843" />
-    <state width="1878" height="275" key="GridCell.Tab.1.center/1792.23.1920.1018/0.23.1792.1097@1792.23.1920.1018" timestamp="1594116229250" />
-    <state width="1878" height="275" key="GridCell.Tab.1.center/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593744138520" />
-    <state width="1878" height="275" key="GridCell.Tab.1.left" timestamp="1594116229250">
-      <screen x="1792" y="23" width="1920" height="1018" />
+    <state width="1494" height="234" key="GridCell.Tab.1.right/0.0.1536.960@0.0.1536.960" timestamp="1594651555333" />
+    <state width="1878" height="234" key="GridCell.Tab.1.right/0.23.1536.894@0.23.1536.894" timestamp="1595249095765" />
+    <state width="1494" height="200" key="GridCell.Tab.1.right/0.23.1536.899@0.23.1536.899" timestamp="1603246728365" />
+    <state width="1494" height="201" key="GridCell.Tab.1.right/0.23.1536.901@0.23.1536.901" timestamp="1603245929416" />
+    <state width="1878" height="234" key="GridCell.Tab.1.right/1792.23.1920.1014/0.23.1792.1097@1792.23.1920.1014" timestamp="1594714754100" />
+    <state width="1878" height="234" key="GridCell.Tab.1.right/1792.23.1920.1057/0.23.1792.1056@1792.23.1920.1057" timestamp="1594693449079" />
+    <state x="100" y="123" width="1336" height="699" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603246402698">
+      <screen x="0" y="23" width="1536" height="899" />
     </state>
-    <state width="1494" height="293" key="GridCell.Tab.1.left/0.23.1536.898@0.23.1536.898" timestamp="1593534086842" />
-    <state width="1878" height="275" key="GridCell.Tab.1.left/1792.23.1920.1018/0.23.1792.1097@1792.23.1920.1018" timestamp="1594116229250" />
-    <state width="1878" height="275" key="GridCell.Tab.1.left/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593744138519" />
-    <state width="1878" height="275" key="GridCell.Tab.1.right" timestamp="1594116229250">
-      <screen x="1792" y="23" width="1920" height="1018" />
+    <state x="100" y="123" width="1336" height="699" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1536.899@0.23.1536.899" timestamp="1603246402698" />
+    <state x="561" y="222" width="670" height="676" key="search.everywhere.popup" timestamp="1594716334727">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1494" height="293" key="GridCell.Tab.1.right/0.23.1536.898@0.23.1536.898" timestamp="1593534086843" />
-    <state width="1878" height="275" key="GridCell.Tab.1.right/1792.23.1920.1018/0.23.1792.1097@1792.23.1920.1018" timestamp="1594116229250" />
-    <state width="1878" height="275" key="GridCell.Tab.1.right/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593744138520" />
-    <state x="2262" y="190" key="SettingsEditor" timestamp="1593508276415">
-      <screen x="1792" y="23" width="1920" height="1057" />
-    </state>
-    <state x="2262" y="190" key="SettingsEditor/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593508276415" />
-    <state x="2353" y="272" key="Vcs.Push.Dialog.v2" timestamp="1593693198863">
-      <screen x="1792" y="23" width="1920" height="1057" />
-    </state>
-    <state x="2353" y="272" key="Vcs.Push.Dialog.v2/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593693198863" />
-    <state width="768" height="449" key="XDebugger.FullValuePopup" timestamp="1593527565276">
-      <screen x="0" y="23" width="1536" height="898" />
-    </state>
-    <state width="768" height="449" key="XDebugger.FullValuePopup/0.23.1536.898@0.23.1536.898" timestamp="1593527565276" />
-    <state x="1893" y="123" width="1720" height="818" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1593692469653">
-      <screen x="1792" y="23" width="1920" height="1057" />
-    </state>
-    <state x="1893" y="123" width="1720" height="818" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/1792.23.1920.1057/0.23.1792.1058@1792.23.1920.1057" timestamp="1593692469653" />
+    <state x="561" y="222" width="670" height="676" key="search.everywhere.popup/1792.23.1920.1014/0.23.1792.1097@0.23.1792.1097" timestamp="1594716334727" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/plategen/plate/plate_old.py</url>
+          <url>file://$PROJECT_DIR$/TextRender/plate/plate_old.py</url>
           <line>121</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
@@ -343,36 +483,55 @@
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/plategen/config.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="49" />
+          <url>file://$PROJECT_DIR$/TextRender/textline/base.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TextRender/fonts_utils.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TextRender/fonts_utils.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TextRender/textline/base.py</url>
+          <line>118</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PlateGen$green.coverage" NAME="green Coverage Results" MODIFIED="1594362415061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/plate" />
-    <SUITE FILE_PATH="coverage/PlateGen$make_raw.coverage" NAME="make_raw Coverage Results" MODIFIED="1593593037840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/scripts" />
-    <SUITE FILE_PATH="coverage/PlateGen$yellow__1_.coverage" NAME="yellow (1) Coverage Results" MODIFIED="1593681598735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/plate" />
+    <SUITE FILE_PATH="coverage/PlateGen$green.coverage" NAME="green Coverage Results" MODIFIED="1594461788446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/plate" />
     <SUITE FILE_PATH="coverage/PlateGen$white.coverage" NAME="white Coverage Results" MODIFIED="1593744829639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/plate" />
-    <SUITE FILE_PATH="coverage/PlateGen$generate.coverage" NAME="generate Coverage Results" MODIFIED="1594286791954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PlateGen$imgen.coverage" NAME="imgen Coverage Results" MODIFIED="1593662273260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen" />
-    <SUITE FILE_PATH="coverage/PlateGen$pipline.coverage" NAME="pipline Coverage Results" MODIFIED="1594363035011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen" />
+    <SUITE FILE_PATH="coverage/PlateGen$fonts_utils.coverage" NAME="fonts_utils Coverage Results" MODIFIED="1594709830799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TextRender" />
+    <SUITE FILE_PATH="coverage/PlateGen$pipline.coverage" NAME="pipline Coverage Results" MODIFIED="1594694260108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen" />
     <SUITE FILE_PATH="coverage/PlateGen$make_res.coverage" NAME="make_res Coverage Results" MODIFIED="1593586137627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/tools" />
     <SUITE FILE_PATH="coverage/PlateGen$template.coverage" NAME="template Coverage Results" MODIFIED="1593509304249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen" />
     <SUITE FILE_PATH="coverage/PlateGen$random.coverage" NAME="random Coverage Results" MODIFIED="1593663563573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/template" />
     <SUITE FILE_PATH="coverage/PlateGen$randplate.coverage" NAME="randplate Coverage Results" MODIFIED="1593690256298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/plate" />
     <SUITE FILE_PATH="coverage/PlateGen$make_examples.coverage" NAME="make_examples Coverage Results" MODIFIED="1593692307117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PlateGen$transform.coverage" NAME="transform Coverage Results" MODIFIED="1593686364091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen" />
-    <SUITE FILE_PATH="coverage/PlateGen$blue.coverage" NAME="blue Coverage Results" MODIFIED="1594362677622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/plate" />
     <SUITE FILE_PATH="coverage/PlateGen$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1593505864425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/resource" />
-    <SUITE FILE_PATH="coverage/PlateGen$charsets.coverage" NAME="charsets Coverage Results" MODIFIED="1593512085148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen" />
-    <SUITE FILE_PATH="coverage/PlateGen$black.coverage" NAME="black Coverage Results" MODIFIED="1594362641998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/plate" />
     <SUITE FILE_PATH="coverage/PlateGen$testp.coverage" NAME="testp Coverage Results" MODIFIED="1593676028458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen" />
     <SUITE FILE_PATH="coverage/PlateGen$yellow.coverage" NAME="yellow Coverage Results" MODIFIED="1593744810252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/plate" />
     <SUITE FILE_PATH="coverage/PlateGen$plate.coverage" NAME="plate Coverage Results" MODIFIED="1593666236584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/template" />
     <SUITE FILE_PATH="coverage/PlateGen$exap.coverage" NAME="exap Coverage Results" MODIFIED="1593744427426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PlateGen$base.coverage" NAME="base Coverage Results" MODIFIED="1594116188763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/textline" />
     <SUITE FILE_PATH="coverage/PlateGen$chars.coverage" NAME="chars Coverage Results" MODIFIED="1593515712544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/template" />
+    <SUITE FILE_PATH="coverage/PlateGen$make_raw.coverage" NAME="make_raw Coverage Results" MODIFIED="1593593037840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/scripts" />
+    <SUITE FILE_PATH="coverage/PlateGen$yellow__1_.coverage" NAME="yellow (1) Coverage Results" MODIFIED="1593681598735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/plate" />
+    <SUITE FILE_PATH="coverage/PlateGen$generate.coverage" NAME="generate Coverage Results" MODIFIED="1594365225363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PlateGen$imgen.coverage" NAME="imgen Coverage Results" MODIFIED="1593662273260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen" />
+    <SUITE FILE_PATH="coverage/PlateGen$base__1_.coverage" NAME="base (1) Coverage Results" MODIFIED="1603245922855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TextRender/textline" />
+    <SUITE FILE_PATH="coverage/PlateGen$transform.coverage" NAME="transform Coverage Results" MODIFIED="1593686364091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen" />
+    <SUITE FILE_PATH="coverage/PlateGen$blue.coverage" NAME="blue Coverage Results" MODIFIED="1594362677622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/plate" />
+    <SUITE FILE_PATH="coverage/PlateGen$black.coverage" NAME="black Coverage Results" MODIFIED="1594364251697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/plate" />
+    <SUITE FILE_PATH="coverage/PlateGen$words.coverage" NAME="words Coverage Results" MODIFIED="1594704471548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TextRender/textline" />
+    <SUITE FILE_PATH="coverage/PlateGen$charsets.coverage" NAME="charsets Coverage Results" MODIFIED="1594707475692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TextRender" />
+    <SUITE FILE_PATH="coverage/PlateGen$default.coverage" NAME="default Coverage Results" MODIFIED="1594459612254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen" />
+    <SUITE FILE_PATH="coverage/PlateGen$base.coverage" NAME="base Coverage Results" MODIFIED="1594651554902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plategen/textline" />
   </component>
 </project>

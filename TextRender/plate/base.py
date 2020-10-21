@@ -49,7 +49,7 @@ class Plate:
         return char, image
 
     def __len__(self):
-        return 0
+        return int(1e8)
 
     def __iter__(self):
         return self
@@ -120,6 +120,9 @@ class RandomPlateCompose(object):
             assert isinstance(g, Plate)
 
         self._genlist = genlist
+
+    def __len__(self):
+        return int(1e8)
 
     def __iter__(self):
         return self

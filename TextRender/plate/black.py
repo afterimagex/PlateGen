@@ -14,7 +14,7 @@ import os.path as osp
 
 from plategen import charsets as cs
 from plategen.imgen import CharsGenerator
-from plategen.plate.base import SinglePlate
+from plategen.plate.base import SinglePlate, DoublePlate
 from plategen.resource import resource_dir
 
 
@@ -79,10 +79,31 @@ class SingleBlackPlateAo(SingleBlackPlate):
     _CATEGORY = 'single_black_ao'
 
 
+class DoubleBlackPlate(DoublePlate):
+    '''
+    实际不存在
+    '''
+    _REGULAR = [
+        (['white'], cs.CHINESE_BASE),
+        (['white'], cs.LETTERS),
+        (['white'], cs.LETTERS + cs.NUMBERS),
+        (['white'], cs.LETTERS + cs.NUMBERS),
+        (['white'], cs.LETTERS + cs.NUMBERS),
+        (['white'], cs.LETTERS + cs.NUMBERS),
+        (['white'], cs.LETTERS + cs.NUMBERS),
+    ]
+    _FG_GENERATOR = CharsGenerator()
+    _BG_FILES = [
+        osp.join(resource_dir, 'template/single_black1.bmp'),
+        osp.join(resource_dir, 'template/single_black2.bmp'),
+    ]
+    _CATEGORY = 'double_black'
+
+
 if __name__ == '__main__':
     import cv2
 
-    sbp = SingleBlackPlateAo(300)
+    sbp = DoubleBlackPlate(300)
 
     for (img, txt, cls) in sbp:
         print(txt, cls)

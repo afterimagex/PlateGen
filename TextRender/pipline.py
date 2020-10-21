@@ -13,10 +13,14 @@
 import numpy as np
 from tensorpack import dataflow as df
 
-from plategen.transform import MotionBlur
+from plategen.transform import MotionBlur, ResizeRatio
 
 
-def plate_generator_pipline(pg, num_proc=10):
+def map_func(data):
+    return data
+
+
+def plate_generator_pipline(pg, size=(128, 64), batch_size=16, num_proc=10):
     augmentors = df.imgaug.AugmentorList([
         df.imgaug.RandomOrderAug([
             df.imgaug.BrightnessScale((0.6, 1.4), clip=False),
@@ -45,10 +49,13 @@ def plate_generator_pipline(pg, num_proc=10):
             df.imgaug.RandomApplyAug(
                 df.imgaug.Affine(scale=(0.8, 1.0), translate_frac=(0.05, 0.05), rotate_max_deg=10, shear=35), 0.5),
         ]),
+        ResizeRatio(size, 127, True),
     ])
 
     ds = df.DataFromGenerator(pg)
     ds = df.AugmentImageComponent(ds, augmentors)
+    ds = df.MapData(ds, map_func)
+    ds = df.BatchData(ds, batch_size, use_list=True)
     # ds = df.MultiProcessRunnerZMQ(ds, num_proc=num_proc)
     return ds
 
@@ -57,13 +64,14 @@ if __name__ == '__main__':
     import cv2
     from plategen.plate.shuffle import ShuffleDoubleBlue
 
-    srp = ShuffleDoubleBlue(174)
-    ds = plate_generator_pipline(srp)
+    srp = ShuffleDoubleBlue(224)
+    ds = plate_generator_pipline(srp, size=(64, 32))
     ds.reset_state()
 
     for (img, txt, cls) in ds:
         print(cls)
         print(txt)
-        print(img.shape)
-        cv2.imshow('demo', img)
+        print(len(img))
+
+        cv2.imshow('demo', img[0])
         cv2.waitKey(0)

@@ -16,7 +16,7 @@ import os.path as osp
 import cv2
 import numpy as np
 
-from plategen.resource import resource_dir
+from TextRender.resource import resource_dir
 
 
 class CharsGenerator:
